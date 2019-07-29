@@ -34,6 +34,13 @@ module.exports = {
     "@typescript-eslint/class-name-casing": "warn",
     "@typescript-eslint/func-call-spacing": "error",
     "@typescript-eslint/indent": ["warn", 2, {
+      "ignoredNodes": [
+        "JSXElement",
+        "JSXElement *",
+        "JSXAttribute",
+        "ConditionalExpression",
+        "TSUnionType"
+      ],
       "VariableDeclarator": {
         "let": 2,
         "var": 2,
@@ -107,7 +114,6 @@ module.exports = {
     "require-atomic-updates": "warn",
     "use-isnan": "error",
     "no-label-var": "warn",
-    "no-unused-vars": "warn",
     "array-bracket-spacing": ["warn", "never"],
     "block-spacing": ["warn", "always"],
     "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
@@ -139,9 +145,10 @@ module.exports = {
       }
     }],
     "linebreak-style": "error",
-    "lines-between-class-members": "warn",
+    "lines-between-class-members": ["warn", "always", { exceptAfterSingleLine: true }],
     "max-len":["error", {
-      "comments": 65,
+      "code": 100,
+      "comments": 120,
       "ignoreUrls": true,
       "ignoreStrings": true,
       "ignoreTemplateLiterals": true,
@@ -248,7 +255,6 @@ module.exports = {
     "react/void-dom-elements-no-children": "warn",
     "react/jsx-boolean-value": "warn",
     "react/jsx-closing-bracket-location": ["warn", "after-props"],
-    "react/jsx-closing-tag-location": "warn",
     "react/jsx-curly-spacing": "warn",
     "react/jsx-equals-spacing": "warn",
     "react/jsx-filename-extension": ["warn", {
@@ -276,11 +282,10 @@ module.exports = {
     "import/no-absolute-path": "error",
     "import/no-dynamic-require": "error",
     "import/no-self-import": "error",
-    // "import/no-cycle": "error",
+    "import/no-cycle": "error",
     "import/no-useless-path-segments": ["error", {
       "noUselessIndex": true,
     }],
-    "import/no-unused-modules": "warn",
     "import/export": "warn",
     "import/no-named-as-default": "warn",
     "import/no-named-as-default-member": "warn",
