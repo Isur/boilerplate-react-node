@@ -3,15 +3,15 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import CopyWebpackPlugin from "copy-webpack-plugin";
 
 export default {
-  context: path.resolve(__dirname, "../src/"),
+  context: path.resolve(__dirname, "../src/client"),
   entry: {
-    client: "./client/index.tsx",
+    client: "./index.tsx",
   },
   mode: "production",
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "../build"),
-    publicPath: "./",
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -52,7 +52,7 @@ export default {
       template: path.resolve(__dirname, "../src/index.html"),
     }),
     new CopyWebpackPlugin([
-      { from: "../public", to: "public/" },
+      { from: "../../public", to: "public/" },
     ]),
   ],
 };

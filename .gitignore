@@ -8,3 +8,8 @@
 .eslintcache
 # logs
 npm-debug.log
+# Editor settings
+/.vscode
+/.idea
+# Testing Coverage
+/coverage

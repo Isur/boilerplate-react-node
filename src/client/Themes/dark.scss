@@ -1,0 +1,20 @@
+html[theme='dark'] {
+    --backgroundColor: black;
+    // Fonts
+    --fontColor: #FFF;
+    --fontColorMenu: #DDD;
+    --fontColorError: rgb(250, 150, 0);
+    // Backgrounds
+    --segmentColor: #333;
+    --bgGradient1: rgb(128, 128, 128);
+    --bgGradient2: rgb(100, 100, 100);
+    --summaryBackground: #222;
+    // Buttons
+    --bgPrimaryButton: rgb(40, 40, 40);
+    --bgPrimaryButtonHover: rgb(90, 90, 90);
+    --bgSecondaryButton: rgb(70,70,70);
+    --bgSecondaryButtonHover: rgb(120,120,120);
+    // Inputs
+    --borderColor: #FFF;
+    --toggleBackground: rgb(40,40,40);
+}

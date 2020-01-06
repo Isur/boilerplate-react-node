@@ -1,0 +1,85 @@
+@import "./theme.scss";
+@import "./globals.scss";
+
+.MuiTextField-root, .MuiFormControl-root {
+    .MuiFormLabel-root {
+        color: $fontColor;
+        &.Mui-focused {
+            color: $fontColor;
+        }
+    }
+    .MuiInput-input{
+        color: $fontColor;
+    }
+    .MuiFormHelperText-root {
+        &.Mui-error {
+            color: $fontColorError;
+        }
+    }
+}
+
+.Mui-error {
+    color: $fontColorError !important;
+}
+
+.MuiDrawer-root {
+    .MuiDrawer-paper {
+        background: linear-gradient(170deg, $bgGradient1, $bgGradient2);
+        .MuiListItemText-primary {
+            color: $fontColorMenu;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .MuiButtonBase-root {
+            max-width: 100%;
+        }
+    }
+    .MuiDrawer-paperAnchorRight {
+        width: 240px;
+    }
+}
+.MuiIcon-root {
+    color: $fontColor;
+}
+
+.MuiStepper-root.MuiPaper-root {
+    background: transparent;
+}
+
+.MuiDialog-paper.MuiPaper-root {
+    background: $bgGradient1;
+}
+
+.MuiTable-root {
+    .MuiTableBody-root {
+        .MuiTableRow-root {
+            .MuiTableCell-root {
+                color: $fontColor;
+            }
+        }
+    }
+}
+
+.MuiPaper-root.MuiExpansionPanel-root {
+    background: $bgGradient1;
+}
+
+.MuiButton-containedPrimary {
+    // background-color: $bgGradient1 !important;
+}
+
+.MuiButton-containedSecondary {
+    // background-color: $bgGradient2 !important;
+}
+
+.MuiFab-primary {
+    background-color: $bgGradient1 !important;
+}
+
+.Mui-checked {
+    color: $bgGradient2 !important;
+}
+.Mui-checked + .MuiSwitch-track {
+    background: $bgGradient1 !important;
+}

@@ -1,0 +1,30 @@
+@import "../../Themes/theme.scss";
+
+.RegisterPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .LogoText {
+        // margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    .registerForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        max-width: 90%;
+        > * {
+            margin-bottom: 1em;
+        }
+        .buttons {
+            justify-content: center;
+            align-items: center;
+            margin-top: 2em;
+        }
+        .error {
+            color: $fontColorError;
+        }
+    }
+}

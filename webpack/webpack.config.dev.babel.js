@@ -4,14 +4,14 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
   target: "web",
-  context: path.resolve(__dirname, "../src/"),
+  context: path.resolve(__dirname, "../src/client"),
   entry: {
-    client: "./client/index.tsx",
+    client: "./index.tsx",
   },
   mode: "development",
   output: {
-    filename: "[name].[hash].bundle.js",
-    path: path.resolve(__dirname, "../dist/"),
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
   },
   module: {
@@ -66,6 +66,8 @@ export default {
       "/api": "http://localhost:5004",
       "changeOrigin": true,
     },
+    historyApiFallback: true,
+    publicPath: "/"
   },
   devtool: "source-map",
   watch: true,
@@ -92,6 +94,6 @@ export default {
     errors: true,
     timings: true,
     version: true,
-    warnings: true,
+    warnings: false,
   },
 };

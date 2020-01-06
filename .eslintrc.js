@@ -13,9 +13,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  overrides: {
-    "files":["src/"],
-  },
   settings: {
     react: {
       version: 'detect',
@@ -28,9 +25,9 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/adjacent-overload-signatures": "warn",
-    "@typescript-eslint/array-type": ["warn", "array"],
+    "@typescript-eslint/array-type": "warn",
     "@typescript-eslint/await-thenable": "warn",
-    "@typescript-eslint/camelcase": "warn",
+    // "@typescript-eslint/camelcase": "warn",
     "@typescript-eslint/class-name-casing": "warn",
     "@typescript-eslint/func-call-spacing": "error",
     "@typescript-eslint/indent": ["warn", 2, {
@@ -81,19 +78,18 @@ module.exports = {
       "protected": "^(?!_)",
       "public": "^(?!_)",
     }],
-    "@typescript-eslint/no-angle-bracket-type-assertion": "error",
     "@typescript-eslint/no-array-constructor": "warn",
-    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/no-extra-parens": "warn",
     "@typescript-eslint/no-inferrable-types": "warn",
     "@typescript-eslint/no-misused-new": "error",
-    "@typescript-eslint/no-object-literal-type-assertion": "warn",
     "@typescript-eslint/no-require-imports": "warn",
-    "@typescript-eslint/prefer-interface": "warn",
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     "@typescript-eslint/prefer-namespace-keyword": "warn",
-    "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/type-annotation-spacing": "warn",
-    "no-console": "warn",
+    "no-console": ["warn",{
+      "allow": ["warn", "error", "table", "time", "timeEnd"]
+    }],
     "no-dupe-args": "error",
     "no-dupe-keys": "error",
     "no-duplicate-case": "error",
@@ -111,7 +107,6 @@ module.exports = {
     "no-sparse-arrays": "error",
     "no-unexpected-multiline": "warn",
     "no-unreachable": "error",
-    "require-atomic-updates": "warn",
     "use-isnan": "error",
     "no-label-var": "warn",
     "array-bracket-spacing": ["warn", "never"],
@@ -146,14 +141,6 @@ module.exports = {
     }],
     "linebreak-style": "error",
     "lines-between-class-members": ["warn", "always", { exceptAfterSingleLine: true }],
-    "max-len":["error", {
-      "code": 100,
-      "comments": 120,
-      "ignoreUrls": true,
-      "ignoreStrings": true,
-      "ignoreTemplateLiterals": true,
-      "ignoreRegExpLiterals": true
-    }],
     "newline-per-chained-call": ["warn", {
       "ignoreChainWithDepth": 2,
     }],
@@ -229,7 +216,6 @@ module.exports = {
     "rest-spread-spacing": "warn",
     "template-curly-spacing": "warn",
     "react/boolean-prop-naming": ["warn", { "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+" }],
-    "react/destructuring-assignment": ["warn", "always", { "ignoreClassFields": true }],
     "react/no-access-state-in-setstate": "warn",
     "react/no-direct-mutation-state": "error",
     "react/no-multi-comp": ["error", {

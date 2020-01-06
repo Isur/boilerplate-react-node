@@ -1,0 +1,23 @@
+@import "../../Themes/theme.scss";
+@import "../../Themes/globals.scss";
+
+.AppHeader {
+  background: linear-gradient(270deg, $bgGradient1, $bgGradient2) !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .MuiToolbar-root {
+    width: 95%;
+    justify-content: space-between;
+  }
+  .mini-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 25px;
+      height: 25px;
+      margin-right: 2px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+html[theme='light'] {
+    --backgroundColor: white;
+    // Fonts
+    --fontColor: #FFF;
+    --fontColorMenu: #DDD;
+    --fontColorError: rgb(250, 150, 0);
+    // Backgrounds
+    --segmentColor: #CCC;
+    --bgGradient1: #39D0F6;
+    --bgGradient2: #1180E2;
+    --summaryBackground: #DDD;
+    // Buttons
+    --bgPrimaryButton: rgb(0,0,250);
+    --bgPrimaryButtonHover: rgb(0,0,180);
+    --bgSecondaryButton: rgb(40,80,250);
+    --bgSecondaryButtonHover: rgb(40,40,180);
+    // Inputs
+    --borderColor: #FFF;
+    --toggleBackground: rgb(0,0,250);
+}

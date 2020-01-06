@@ -1,0 +1,51 @@
+{
+  "labels": {
+    "password": "Password",
+    "login": "Login",
+    "username": "Username",
+    "passwordConfirm": "Confirm Password",
+    "email": "Email",
+    "name": "Name",
+    "description": "Description"
+  },
+  "placeholders": {
+    "password": "Enter your password...",
+    "login": "Enter your login...",
+    "username": "Enter your username...",
+    "email": "Enter your email...",
+    "name": "Enter your name..."
+  },
+  "buttons": {
+    "login": "Login",
+    "register": "Register"
+  },
+  "texts": {
+    "PageNotExists": "Sorry, but this page does not exists!"
+  },
+  "errors": {
+    "passwordsIdentical": "Passwords have to be identical!",
+    "required": "This field is required!",
+    "loginfailed": "Incorrect login or password",
+    "passwordOptions": "Password has to have at least 8 chars, one special character, one digit, one lower and capital letter",
+    "register-failed": "Account with this data already exists!"
+  },
+  "menu": {
+    "theme": "Theme",
+    "lang": "Language",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "home": "Home",
+    "profile": "Profile"
+  },
+  "select": {
+  },
+  "notifications": {
+    "login": "Logged in!",
+    "login-failed": "Failed to log in",
+    "logout": "Logged out!"
+  },
+  "test": {
+    "eng-test": "ENGLISH TEST"
+  }
+}

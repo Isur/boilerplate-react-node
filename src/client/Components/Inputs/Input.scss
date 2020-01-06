@@ -1,0 +1,59 @@
+@import "../../Themes/theme.scss";
+
+.ui.form {
+    .label, label, .ui > label,  .ui.checked > label, .ui.toggle.checkbox input:checked~label {
+        color: $fontColor !important;
+    }
+    .ui.toggle.checkbox input:checked~.box:before, .ui.toggle.checkbox input:checked~label:before {
+        background-color: $toggleBackground !important;
+    }
+    .error {
+        color: $fontColorError;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .customInput, .customTextArea, .dateTimePicker {
+        input, textarea, .flatpickr-input {
+            background: rgba(0,0,0,0.05);
+            border: none;
+            border-bottom: 1px solid $borderColor;
+            transition: background 1s ease;
+            color: $fontColor;
+            font-size: 16px;
+            &:focus {
+                background: rgba(0,0,0,0.2);
+                color: rgba(255,255,255, 1);
+            }
+            &::placeholder {
+                color: rgba(255,255,255, 0.7);
+                font-size: 14px;
+            }
+        }
+    }
+
+    .customSelect {
+        .dropdown:not(.icon) {
+            background: rgba(0,0,0,0.05);
+            border: none;
+            border-bottom: 1px solid $borderColor;
+            transition: background 1s ease;
+            padding: 0.6em 1em;
+            color: $fontColor;
+            &:focus {
+                background: rgba(0,0,0,0.2);
+                color: rgba(255,255,255, 1);
+            }
+            .menu {
+                width: 100%;
+                background: linear-gradient($bgGradient1, $bgGradient2);
+                .item {
+                    color: $fontColor;
+                }
+            }
+        }
+    }
+}
+
+.faked {
+    display: none;
+}
